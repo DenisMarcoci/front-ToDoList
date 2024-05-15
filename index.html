@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="title__text">what's up, </h1>
+        <input class="title" type='text' placeholder="your name" value="" name="title" id="title" /><br />
+        <h2>Create TODO</h2>
+        <form class="todo-form">
+            <label for="task">What's on your todo list</label><br/>
+            <input type='text' name="task" id="task" placeholder='e.g get a milk' /><br />
+
+            <label class="category__label">Pick a category</label>
+            <div class="category">
+                <div class="category__block">
+                    <input class="category__radio" type="radio" id="business" name="category" value="business">
+                    <label for="business">Business</label>
+                </div>
+                <div class="category__block">
+                    <input class="category__radio personal-radio" type="radio" id="personal" name="category" value="personal">
+                    <label for="personal">Personal</label>
+                </div>
+            </div>
+
+            <input type="submit" id="submit__btn" value="Add Todo">
+        </form>
+        <h2>TODO List</h2>
+        <div class="tasks">
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
